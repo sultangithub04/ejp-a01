@@ -25,7 +25,7 @@ const page = ({params}) => {
 
 //   console.log(post); 3
     return (
-        <div>
+        <div className='min-h-[calc(100vh-16rem)]  pt-32'>
         {post ? (
           <div>
             <h1>{post.title}</h1>
