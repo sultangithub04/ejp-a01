@@ -1,4 +1,5 @@
 "use client";
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 const page = ({params}) => {
@@ -33,6 +34,8 @@ const page = ({params}) => {
         ) : (
           <p>Loading post...</p>
         )}
+        <br />
+        <Link href='/' className='bg-red-400 px-2 py-1 text-white'>back</Link>
       </div>
     );
 };

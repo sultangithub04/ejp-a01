@@ -25,15 +25,16 @@ export default function Home() {
   return (
 
     <div>
-    <h3 className="text-2xl font-bold">Posts</h3>
-    <ul className="p-10">
+    <h3 className="text-2xl font-bold my-4">Posts</h3>
+    <ul className="space-y-2">
       {posts.map((post) => (
-        <li key={post.id}>
+        <li key={post.id} className="hover:text-red-400">
           <Link href={`/blog/${post.id}`}>{post.title}</Link>
          
         </li>
       ))}
     </ul>
+  
   </div>
   );
 }
