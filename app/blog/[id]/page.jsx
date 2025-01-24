@@ -28,7 +28,7 @@ const page = ({params}) => {
         <div className='min-h-[calc(100vh-16rem)]  pt-32'>
         {post ? (
           <div>
-            <h1>{post.title}</h1>
+            <h1 className='font-bold'>{post.title}</h1>
             <p>{post.body}</p>
           </div>
         ) : (
