@@ -7,7 +7,6 @@ import {useKindeBrowserClient} from "@kinde-oss/kinde-auth-nextjs";
 const Navbar = () => {
   const {user, getUser} = useKindeBrowserClient();
   const alsoUser = getUser();
-  
   console.log(user);
   return (
     <div className="bg-base-100  text-slate-900 border-b-[1px] py-2">
